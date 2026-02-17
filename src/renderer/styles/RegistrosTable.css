@@ -1,0 +1,87 @@
+.table-container {
+  overflow-x: auto;
+}
+
+.registros-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.registros-table thead {
+  background-color: #f3f4f6;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.registros-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+.registros-table tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.2s ease;
+}
+
+.registros-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.registros-table td {
+  padding: 1rem;
+  color: #4b5563;
+}
+
+/* Colores para filas según resultado */
+.registro-row.ok {
+  background-color: rgba(209, 250, 229, 0.3);
+}
+
+.registro-row.ng {
+  background-color: rgba(254, 226, 226, 0.3);
+}
+
+.registro-row.ok:hover {
+  background-color: rgba(209, 250, 229, 0.5);
+}
+
+.registro-row.ng:hover {
+  background-color: rgba(254, 226, 226, 0.5);
+}
+
+/* Badge de resultado */
+.resultado-badge {
+  padding: 0.375rem 0.75rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: inline-block;
+  text-align: center;
+  min-width: 60px;
+}
+
+.resultado-badge.ok {
+  background-color: #10b981;
+  color: white;
+}
+
+.resultado-badge.ng {
+  background-color: #ef4444;
+  color: white;
+}
+
+.no-registros {
+  text-align: center;
+  padding: 3rem;
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+.no-registros p {
+  margin: 0;
+}

@@ -1,0 +1,46 @@
+{
+  "name": "yokohama-quality-system",
+  "version": "1.0.0",
+  "description": "\"Sistema de Gestión de Calidad (SDCC-Y) desarrollado con Electron, React y SQLite para la digitalización y validación automatizada de inspecciones industriales en Yokohama Industries.\"",
+  "main": "src/main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch",
+    "electron-dev": "NODE_ENV=development electron .",
+    "seed": "node src/database/seed.js",
+    "package": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AxelUAA/yokohama-quality-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AxelUAA/yokohama-quality-system/issues"
+  },
+  "homepage": "https://github.com/AxelUAA/yokohama-quality-system#readme",
+  "dependencies": {
+    "better-sqlite3": "^12.6.2",
+    "electron": "^40.4.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.6",
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.0",
+    "@babel/preset-react": "^7.28.5",
+    "babel-loader": "^8.4.1",
+    "css-loader": "^7.1.4",
+    "electron-builder": "^26.7.0",
+    "html-webpack-plugin": "^5.6.6",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.105.2",
+    "webpack-cli": "^6.0.1"
+  }
+}
