@@ -9,6 +9,7 @@
     "dev": "webpack --mode development --watch",
     "electron-dev": "NODE_ENV=development electron .",
     "seed": "node src/database/seed.js",
+    "verify": "node verify-system.js",
     "package": "electron-builder",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
